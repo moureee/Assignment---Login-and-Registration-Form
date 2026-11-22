@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leading University | Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container wide">
+        <div class="heading">
+            <img class="university-logo" src="https://images.seeklogo.com/logo-png/44/1/leading-university-logo-png_seeklogo-445048.png" alt="Leading University logo">
+            <h2 class="university-name">LEADING UNIVERSITY</h2>
+            <p class="motto">...A Promise to Lead</p>
+            <hr>
+            <h1>Create Your Account</h1>
+            <p>Tell us a little about yourself to get started.</p>
+        </div>
+
+        <form action="#" method="POST">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="student@lus.ac.bd" required>
+
+            <label for="password">Create Password</label>
+            <input type="password" id="password" name="password" placeholder="Choose a password" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="date_of_birth" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone_number" placeholder="Enter your phone number" required>
+
+            <fieldset>
+                <legend>Preferred Study Mode</legend>
+                <div class="choice"><input type="radio" id="on-campus" name="study_mode" value="on_campus" required><label for="on-campus">On Campus</label></div>
+                <div class="choice"><input type="radio" id="online" name="study_mode" value="online"><label for="online">Online</label></div>
+                <div class="choice"><input type="radio" id="hybrid" name="study_mode" value="hybrid"><label for="hybrid">Hybrid</label></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Areas of Interest (choose any)</legend>
+                <div class="choice"><input type="checkbox" id="web-design" name="interests" value="web_design"><label for="web-design">Web Design</label></div>
+                <div class="choice"><input type="checkbox" id="programming" name="interests" value="programming"><label for="programming">Programming</label></div>
+                <div class="choice"><input type="checkbox" id="networking" name="interests" value="networking"><label for="networking">Networking</label></div>
+            </fieldset>
+
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="" disabled selected>Select your department</option>
+                <option value="cse">Computer Science &amp; Engineering</option>
+                <option value="eee">Electrical &amp; Electronic Engineering</option>
+                <option value="bba">Business Administration</option>
+                <option value="english">English</option>
+            </select>
+
+            <label for="about">Why are you interested in this department?</label>
+            <textarea id="about" name="reason" rows="4" placeholder="Write a few sentences..."></textarea>
+
+            <div class="choice terms">
+                <input type="checkbox" id="terms" name="agree_to_terms" value="yes" required>
+                <label for="terms">I agree to the Terms and Conditions.</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Register</button>
+                <button type="reset" class="reset-button">Reset</button>
+            </div>
+        </form>
+
+        <p class="bottom-text">Already have an account? <a href="login.html">Back to Login</a></p>
+    </div>
+</body>
+</html>

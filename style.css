@@ -1,0 +1,165 @@
+/* Simple styling shared by the login and registration pages */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1f2937;
+    margin: 0;
+    padding: 35px 15px;
+}
+
+.container {
+    background-color: white;
+    max-width: 430px;
+    margin: 40px auto;
+    padding: 32px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.container.wide {
+    max-width: 560px;
+    margin-top: 0;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.university-logo {
+    display: block;
+    width: 108px;
+    height: auto;
+    margin: 0 auto 12px;
+}
+
+.tag {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 8px 0;
+    font-size: 27px;
+}
+
+.heading p:last-child, .bottom-text {
+    color: #64748b;
+    font-size: 14px;
+}
+
+form > label {
+    display: block;
+    margin: 17px 0 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"], input[type="email"], input[type="password"],
+input[type="date"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin: 20px 0;
+    padding: 12px 15px;
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 9px 0;
+    font-size: 14px;
+}
+
+.choice input {
+    margin: 0;
+}
+
+.terms {
+    margin: 22px 0;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 22px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.buttons button {
+    margin-top: 0;
+}
+
+.reset-button {
+    background-color: #e2e8f0;
+    color: #1f2937;
+}
+
+.reset-button:hover {
+    background-color: #cbd5e1;
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 22px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* University branding refinements */
+.university-name { color: #176b45; font-family: Georgia, serif; font-size: 23px; letter-spacing: .5px; margin: 4px 0; text-align: center; }
+.motto { color: #b83b3b; font-family: Georgia, serif; font-size: 15px; font-style: italic; margin: 4px 0 18px; }
+.heading hr { border: 0; border-top: 1px solid #dce8df; margin: 20px 0; }
+body { background-color: #f2f6f3; color: #24332b; }
+.container { border-color: #dce8df; }
+button { background-color: #176b45; }
+button:hover { background-color: #105234; }
+a { color: #176b45; }
+input:focus, select:focus, textarea:focus { border-color: #176b45; }
